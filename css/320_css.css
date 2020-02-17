@@ -1,0 +1,459 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    min-width: 320px; /*не понимаю почему ширина всё равно становиться меньше 320px*/
+}
+
+.preview, .preview-logo, .app_store, .google_play, .title, .preview-logo-img {
+    position: relative;
+    z-index: 1;
+}
+
+.button-svg {
+    fill: white;
+    height: 2.75em;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    font-family: "Open Sans Bold";
+}
+
+.athlets, .players {
+    position: relative;
+}
+
+picture {
+    font-size: 0;
+}
+
+@media (max-width: 640px) {
+    .preview {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 4.5% 0 26.25% 0;
+        background-image: url("../img/football_767.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .preview::after {
+        content: "";
+        position: absolute;
+        background-color: #1f1e3d;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.9;
+    }
+
+    .preview-logo {
+        padding: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 41.25%;
+    }
+
+    .preview-logo-img {
+        fill: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .title {
+        margin: 43vmin 0 0 6.25%;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "Open Sans Bold";
+        font-size: 8.75vw;
+    }
+
+    .title-first-line {
+        margin: 0 0 2rem 0;
+        padding: 0;
+    }
+
+    .title-container {
+        display: block;
+    }
+
+    .title-second-line {
+        margin: 0 0 0 44px;
+        padding: 0;
+    }
+
+    .title-third-line {
+        margin: 0 0 0 44px;
+        padding: 0;
+    }
+
+
+    .app {
+        width: 100%; /*пришлось задать ширину, так как блоки .app_store и .google_play
+         почему-то не растягиваются на всю ширину родителя .footer при этом растягиваются на всю ширину блока-родителя .preview*/
+    }
+
+    .link-app {
+        display: block;
+        margin-top: 5.625rem;
+    }
+
+    .app_store {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: "Open Sans";
+        font-size: 2.5vw;
+        color: #ffffff;
+        background-color: #5e42b0;
+        box-sizing: border-box;
+        width: 88%;
+        height: 4.5em;
+        border-radius: 6.25rem;
+        border: none;
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 0 0 25%;;
+
+    }
+
+    .link-gp {
+        display: block;
+        margin-top: 1.25rem;
+    }
+
+    .google_play {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: "Open Sans";
+        font-size: 2.5vw;
+        color: #ffffff;
+        background-color: #5e42b0;
+        box-sizing: border-box;
+        width: 88%;
+        height: 4.5em;
+        border-radius: 100px;
+        border: none;
+        margin-top: 1.25rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 0 0 25%;
+    }
+
+    .button-app_store_text {
+        text-align: left;
+        box-sizing: border-box;
+        width: 26vw;
+        margin: 0 0 0 9px;
+        padding: 0;
+    }
+
+    .button-google_play_text {
+        text-align: left;
+        box-sizing: border-box;
+        width: 17.5vw;
+        margin: 0 0 0 9px;
+        padding: 0;
+    }
+
+    .page {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .card-header {
+        background-color: #ffffff;
+        padding-bottom: 70%;
+    }
+
+    .article-header {
+        font-family: "Open Sans Bold";
+        font-size: 3.125rem;
+        color: #e7e7e7;
+        text-transform: uppercase;
+        margin: 0 0 0 6.25%;
+        padding: 0;
+    }
+
+
+
+    .article-container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .athlets-img {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 57%;
+    }
+
+    .article-connection {
+        display: flex;
+        flex-direction: column;
+        background-color: #fafafa;
+        padding: 26.25% 6.25% 17% 6.25%;
+
+    }
+
+    .post-header {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans Bold";
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #c1c1c1;
+    }
+
+    .post-number {
+        font-family: "Open Sans Bold";
+        font-size: 0.875rem;
+        color: #000000;
+        margin-right: 0.8em;
+        align-self: center;
+    }
+
+    .post-number:after {
+        display:block;
+        content:'';
+        width: 100%;
+        height: 4px;
+        background: #5e42b0;
+        margin: 0;
+    }
+
+
+    .post-content {
+        font-family: "Open Sans";
+        font-size: 1rem;
+        color: #000000;
+        margin: 8.5% 0 0 0;
+    }
+
+    .article-collaboration {
+        background-color: #f5f4f9;
+        display: flex;
+        flex-direction: column;
+        padding: 19% 6.25% 17% 6.25%;
+    }
+
+    .article-growth {
+        background-color: #5e42b0;
+        display: flex;
+        flex-direction: column;
+        padding: 19% 6.25% 17% 6.25%;
+    }
+
+    .post-number-growth:after {
+        display:block;
+        content:'';
+        width: 100%;
+        height: 4px;
+        background: #ffffff;
+        margin: 0;
+    }
+
+    .post-content-growth {
+        color: #ffffff;
+    }
+
+    .card-header-players {
+        background-color: #ffffff;
+        padding-bottom: 70%;
+    }
+
+    .players-img {
+        position: absolute;
+        width: 93.75%;
+        left: calc(50% - 93.75%/2);
+
+    }
+
+    .article-growth-players {
+        background-color: #090c35;
+        display: flex;
+        flex-direction: column;
+        padding: 19% 6.25% 17% 6.25%;
+    }
+
+    .post-number-players {
+        font-family: "Open Sans Bold";
+        font-size: 0.875rem;
+        color: #8765dd;
+        margin-right: 0.8em;
+        align-self: center;
+    }
+
+    .post-number-players:after {
+        display:block;
+        content:'';
+        width: 100%;
+        height: 4px;
+        background: #ffffff;
+        margin: 0;
+    }
+
+    .post-content-players {
+        font-family: "Open Sans";
+        font-size: 1rem;
+        color: #ffffff;
+        margin: 8.5% 0 0 0;
+    }
+
+    .advice {
+        position: relative;
+        font-size: 0;
+    }
+
+    .advice-img {
+        width: 100vw;
+        font-size: 0;
+    }
+
+    .frame-number, .frame-number-contact {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        width: 21.875vw;
+        height: 21.875vw;
+        top: calc(100% - 18.125vw);
+        left: 0;
+        background-color: #5e42b0;
+        margin: 0 0 0 6.25%;
+    }
+
+    .advice-number {
+        margin: auto;
+        font-family: "Open Sans Bold";
+        font-size: 4.375vw;
+        color: #f5f6f7;
+    }
+
+    .advice-number:after {
+        display:block;
+        content:'';
+        width: 100%;
+        height: 4px;
+        background: #8f7bc8;
+        margin: 0;
+    }
+
+    .advice-header {
+        font-family: "Open Sans Bold";
+        font-size: 8.75vw;
+        color: #e7e7e7;
+        text-transform: uppercase;
+        margin: 10% 0 0 6.25%;
+        padding: 0;
+    }
+
+    .post-content-advice {
+        font-family: "Open Sans";
+        font-size: 1rem;
+        color: #000000;
+        margin: 8.5% 6.25% 25.625% 6.25%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 31.25% 0 3% 0;
+        background-image: url("../img/game_767.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .footer:after {
+        content: "";
+        position: absolute;
+        background-color: #1f1e3d;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.9;
+    }
+
+    .footer-button {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        width: 22.5vw;
+        height: 22.5vw;
+        padding: 0;
+        background: linear-gradient(#7755d7, #50379a);
+        border-radius: 25%;
+        margin: 0 auto 0 auto;
+    }
+
+    .button {
+        display: block;
+        fill: #ffffff;
+        width: 77.77%;
+        position: relative;
+        z-index: 1;
+        margin: auto;
+    }
+
+    .footer-title {
+        margin: 18.75% auto 0 auto;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "Open Sans Bold";
+        font-size: 1.75rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .footer-title-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text {
+        font-family: "Open Sans";
+        font-size: 0.875rem;
+        color: #9b8ec1;
+        position: relative;
+        z-index: 1;
+        margin: 0;
+    }
+
+    .footer-logo {
+        margin-top: 26%;
+    }
+}

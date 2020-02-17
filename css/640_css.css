@@ -1,0 +1,397 @@
+@media (min-width: 641px) and (max-width: 960px) {
+    .preview {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 5% 0 12% 0;
+        background-image: url("../img/football_1280.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .preview::after {
+        content: "";
+        position: absolute;
+        background-color: #1f1e3d;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.9;
+    }
+
+    .preview-logo {
+        padding: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 26.56%;
+    }
+
+    .preview-logo-img {
+        fill: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .title {
+        margin: 23.7% 0 0 11.72%;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "Open Sans Bold";
+        font-size: 8.33vw;
+    }
+
+    .title-first-line {
+        margin: 0;
+    }
+
+    .title-container {
+        display: block;
+    }
+
+    .title-second-line {
+        margin: 0 0 0 6.2rem;
+        padding: 0;
+    }
+
+    .title-third-line {
+        margin: 0 0 0 6.2rem;
+        padding: 0;
+    }
+
+    .app {
+        display: flex;
+        justify-content: space-between;
+        margin: 41% auto 0 auto;
+        width: 85%;
+    }
+
+    .link-store {
+        width: 48%;
+    }
+
+    .app_store {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: "Open Sans";
+        font-size: 0.875rem;
+        color: #ffffff;
+        background-color: #5e42b0;
+        height: 5.4em;
+        border-radius: 6.25rem;
+    }
+
+    .google_play {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: "Open Sans";
+        font-size: 0.875rem;
+        color: #ffffff;
+        background-color: #5e42b0;
+        height: 5.4em;
+        border-radius: 100px;
+    }
+
+    .button-app_store_text {
+        text-align: left;
+        box-sizing: border-box;
+        width: 10em;
+        margin: 0 0 0 2em;
+        padding: 0;
+    }
+
+    .button-google_play_text {
+        text-align: left;
+        box-sizing: border-box;
+        width: 8em;
+        margin: 0 0 0 2em;
+        padding: 0;
+    }
+
+    .page {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .card-header {
+        background-color: #ffffff;
+        padding: 0;
+        margin: 11% 0 0 38%;
+    }
+
+    .article-header {
+        font-family: "Open Sans Bold";
+        font-size: 5rem;
+        color: #e7e7e7;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+
+    .athlets-img {
+        position: absolute;
+        width: 65%;
+        left: -21%;
+        top: 15vw;
+        width: 65vw;
+        font-size: 0;
+    }
+
+    .article-connection {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0 4.3% 0 38%;
+    }
+
+    .post-header {
+        display: flex;
+        margin: 7% 0 0 0;
+        padding: 0;
+        font-family: "Open Sans Bold";
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #c1c1c1;
+    }
+
+    .post-number {
+        font-family: "Open Sans Bold";
+        font-size: 1.125rem;
+        color: #000000;
+        margin-right: 0.8em;
+        align-self: center;
+    }
+
+    .post-number:after {
+        display:block;
+        content:'';
+        width: 100%;
+        height: 4px;
+        background: #5e42b0;
+        margin: 0;
+    }
+
+    .post-content {
+        font-family: "Open Sans";
+        font-size: 1rem;
+        color: #000000;
+        margin: 6% 0 8% 0;
+    }
+
+    .article-collaboration {
+        display: flex;
+        flex-direction: column;
+        background-color: #f5f4f9;
+        margin: 0;
+        padding: 0 4.3% 0 38%;
+    }
+
+    .article-growth {
+        display: flex;
+        flex-direction: column;
+        background-color: #5e42b0;
+        margin: 0;
+        padding: 0 4.3% 0 38%;
+    }
+
+    .post-number-growth:after {
+        display:block;
+        content:'';
+        width: 100%;
+        height: 4px;
+        background: #ffffff;
+        margin: 0;
+    }
+
+    .post-content-growth {
+        color: #ffffff;
+    }
+
+    .players-header {
+        margin: 10% 0 0 4.55%;
+    }
+
+    .players-img {
+        position: absolute;
+        top: 8%;
+        right: 0;
+        width: 55vw;
+    }
+
+    .article-connection-players {
+        padding: 0 48% 0 4.3%;
+    }
+
+    .article-collaboration-players {
+        background-color: #f5f4f9;
+        padding: 0 48% 0 4.3%;
+    }
+
+    .article-growth-players {
+        display: flex;
+        flex-direction: column;
+        padding: 0 48% 0 4.3%;
+        background-color: #090c35;
+    }
+
+    .post-number-players {
+        font-family: "Open Sans Bold";
+        font-size: 1.125rem;
+        color: #8765dd;
+        margin-right: 0.8em;
+        align-self: center;
+    }
+
+    .post-number-players:after {
+        display:block;
+        content:'';
+        width: 100%;
+        height: 4px;
+        background: #ffffff;
+        margin: 0;
+    }
+
+    .post-content-players {
+        font-family: "Open Sans";
+        font-size: 1rem;
+        color: #ffffff;
+        margin: 6% 0 8% 0;
+    }
+
+    .advice {
+        position: relative;
+    }
+
+    .advice-img {
+        width: 100vw;
+    }
+
+    .frame-number, .frame-number-contact {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        width: 116px;
+        height: 116px;
+        top: calc(100% - 85px);
+        left: 0;
+        background-color: #5e42b0;
+        margin: 0 0 0 6.25%;
+    }
+
+    .advice-number {
+        margin: auto;
+        font-family: "Open Sans Bold";
+        font-size: 1.5rem;
+        color: #f5f6f7;
+    }
+
+    .advice-number:after {
+        display:block;
+        content:'';
+        width: 100%;
+        height: 4px;
+        background: #8f7bc8;
+        margin: 0;
+    }
+
+    .advice-header {
+        font-family: "Open Sans Bold";
+        font-size: 5rem;
+        color: #e7e7e7;
+        text-transform: uppercase;
+        margin: 10% 0 0 6.25%;
+        padding: 0;
+    }
+
+    .post-content-advice {
+        font-family: "Open Sans";
+        font-size: 1.5rem;
+        color: #000000;
+        margin: 5% 7% 12% 7%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 16% 0 3% 0;
+        background-image: url("../img/game_767.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .footer:after {
+        content: "";
+        position: absolute;
+        background-color: #1f1e3d;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.9;
+    }
+
+    .footer-button {
+        display: flex;
+        /*justify-content: center; не понял почему не требуется*!*/
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        width: 17vw;
+        height: 17vw;
+        padding: 0;
+        background: linear-gradient(#7755d7, #50379a);
+        border-radius: 30px;
+        margin: 0 auto 0 auto;
+    }
+
+    .button {
+        display: block;
+        fill: #ffffff;
+        width: 77.77%;
+        position: relative;
+        z-index: 1;
+        margin: auto;
+    }
+
+    .footer-title {
+        margin: 10.8% auto 0 auto;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "Open Sans Bold";
+        font-size: 11vw;
+        position: relative;
+        z-index: 1;
+    }
+
+    .footer-title-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text {
+        font-family: "Open Sans";
+        font-size: 5vw;
+        text-transform: uppercase;
+        color: #9b8ec1;
+        position: relative;
+        z-index: 1;
+        margin: 0 auto 0 auto;
+    }
+
+    .footer-logo {
+        margin-top: 26%;
+    }
+}
